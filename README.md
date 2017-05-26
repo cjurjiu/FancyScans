@@ -9,8 +9,15 @@ Possible uses: No Man's Sky like scan lines over terrain, as seen below:
 
 This is basically a version of the shader+script pair presented [here](https://www.youtube.com/watch?v=OKoNp2RqE9A), modified to additionally support transparent geometry. 
 
-Instead of using the depth buffer & an image effect for the scan lines, it just adds the scan lines to the object itself. 
+Instead of using the depth buffer & an image effect for the scan lines, it adds the scan lines to the object itself in order to support transparent objects. 
 
-Sample project with the scenes used to generate the gif in the **FancyScansSampleProject** folder. Relevant scripts & shaders in the **FancyScans** folder. 
+This project contains two shader&script pairs, in the **FancyScans** folder:
+ * *SingleScanShader.shader* & *SingleScanController.cs* - supports only one scan line active at a time.
+ * *MultiScanShader.shader* & *MultiScanController.cs* - supports up to 5 scan lines rendered simultaneously. 
+   * New scans are triggered automatically at set intervals. 
+   * When the 6th line is created, the oldest line is discarded.
+   * If you need more than 5 lines, you'll have to edit the shader & the [Range...] annotation in the script file.
+
+Sample project with the scenes used to generate the gif in the **FancyScansSampleProject** folder.
 
 Enjoy!
