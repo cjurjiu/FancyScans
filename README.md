@@ -7,10 +7,10 @@ Possible uses: No Man's Sky like scan lines over terrain, as seen below:
 
 ![](https://github.com/cjurjiu/FancyScans/blob/master/gifs/first_person_terrain.gif)
 
-This is basically just a version of the shader+script pair presented [here](https://www.youtube.com/watch?v=OKoNp2RqE9A), which works with transparent geometry. 
+This is basically a version of the shader+script pair presented [here](https://www.youtube.com/watch?v=OKoNp2RqE9A), modified to additionally support transparent geometry. 
 
 Instead of using the depth buffer & an image effect for the scan lines, it just adds the scan lines to the object itself. 
 
-Sample project with the scenes used to generate the gif in the **FancyScansSampleProject** folder. Relevant scripts & shaders in the **FancyScans** folder.
+Sample project with the scenes used to generate the gif in the **FancyScansSampleProject** folder. Relevant scripts & shaders in the **FancyScans** folder. 
 
 Enjoy!
