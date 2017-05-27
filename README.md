@@ -18,6 +18,8 @@ This project contains two shader&script pairs, in the **FancyScans** folder:
    * When the 6th line is created, the oldest line is discarded.
    * If you need more than 5 lines, you'll have to edit the shader & the [Range...] annotation in the script file.
 
+The shaders could easily be converted to a plain-old, more efficient, vertex/fragment shaders, instead of being Unity's surface shaders. 
+
 Sample project with the scenes used to generate the gif in the **FancyScansSampleProject** folder.
 
 Enjoy!
